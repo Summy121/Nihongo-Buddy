@@ -1,0 +1,10 @@
+[
+ {"id":"q01","level":"N5","grammarId":"n5-particle-de","question":"図書館（　）日本語を勉強します。","options":["に","で","へ","が"],"answer":1,"explanation":"讀書是發生在圖書館的動作，所以用表示動作場所的「で」。"},
+ {"id":"q02","level":"N5","grammarId":"n5-particle-ni","question":"毎朝七時（　）起きます。","options":["を","で","に","へ"],"answer":2,"explanation":"七點是明確時間點，通常用「に」。"},
+ {"id":"q03","level":"N5","grammarId":"n5-particle-e","question":"来月、日本（　）行きます。","options":["へ","を","で","が"],"answer":0,"explanation":"「へ」表示移動方向；此句也可用「に」，但選項中沒有「に」。"},
+ {"id":"q04","level":"N5","grammarId":"n5-te-form","question":"「待つ」的て形是哪一個？","options":["待いて","待って","待んで","待して"],"answer":1,"explanation":"「待つ」屬五段動詞，字尾「つ」變成「って」，所以是「待って」。"},
+ {"id":"q05","level":"N5","grammarId":"n5-particle-ni","question":"明日、友達（　）会います。","options":["で","を","が","に"],"answer":3,"explanation":"「会う」的見面對象通常用「に」。"},
+ {"id":"q06","level":"N4","grammarId":"n4-tara","question":"雨が降っ（　）、家にいます。","options":["ても","たら","ながら","たい"],"answer":1,"explanation":"「降ったら」表示『如果下雨的話』。"},
+ {"id":"q07","level":"N4","grammarId":"n4-potential","question":"「話す」的可能形是哪一個？","options":["話します","話した","話せる","話して"],"answer":2,"explanation":"五段動詞「話す」變可能形時為「話せる」。"},
+ {"id":"q08","level":"N4","grammarId":"n4-potential","question":"日本語が少し（　）。","options":["話せます","話すです","話してください","話しますか"],"answer":0,"explanation":"「話せます」是可能形，表示『會說／能說』。"}
+]
