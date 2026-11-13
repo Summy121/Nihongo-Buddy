@@ -1,0 +1,12 @@
+[
+ {"id":"v01","level":"N5","word":"学校","reading":"がっこう","meaning":"學校","example":"学校へ行きます。"},
+ {"id":"v02","level":"N5","word":"勉強","reading":"べんきょう","meaning":"學習、讀書","example":"日本語を勉強します。"},
+ {"id":"v03","level":"N5","word":"友達","reading":"ともだち","meaning":"朋友","example":"友達に会います。"},
+ {"id":"v04","level":"N5","word":"電車","reading":"でんしゃ","meaning":"電車","example":"電車で行きます。"},
+ {"id":"v05","level":"N5","word":"図書館","reading":"としょかん","meaning":"圖書館","example":"図書館で本を読みます。"},
+ {"id":"v06","level":"N5","word":"料理","reading":"りょうり","meaning":"料理","example":"料理が好きです。"},
+ {"id":"v07","level":"N4","word":"約束","reading":"やくそく","meaning":"約定、約會","example":"友達と約束があります。"},
+ {"id":"v08","level":"N4","word":"準備","reading":"じゅんび","meaning":"準備","example":"旅行の準備をします。"},
+ {"id":"v09","level":"N4","word":"経験","reading":"けいけん","meaning":"經驗","example":"日本で働いた経験があります。"},
+ {"id":"v10","level":"N4","word":"必要","reading":"ひつよう","meaning":"必要","example":"パスポートが必要です。"}
+]

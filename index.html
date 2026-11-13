@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f5ed">
+  <meta name="description" content="Nihongo Buddy：適合日語初學者的 N5–N4 文法、單字卡、小測驗與學習進度網站。">
+  <title>Nihongo Buddy｜我的日語學習小教室</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="header">
+      <a href="#home" class="brand" data-nav="home" aria-label="回到首頁"><span class="brand-mark">あ</span><span>Nihongo <em>Buddy</em><small>にほんごのともだち</small></span></a>
+      <nav class="nav" aria-label="主要導覽">
+        <button class="nav-link is-active" data-page="home" aria-current="page">首頁</button>
+        <button class="nav-link" data-page="grammar">文法教室</button>
+        <button class="nav-link" data-page="words">單字卡</button>
+        <button class="nav-link" data-page="quiz">小測驗</button>
+        <button class="nav-link" data-page="progress">學習進度</button>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="page active" id="home" aria-labelledby="home-title">
+        <div class="hero">
+          <div class="hero-copy"><span class="eyebrow">今日も一緒に、少しずつ 🌸</span><h1 id="home-title">日語學習，<br><span>每天進步一點點。</span></h1><p>從日常文法到生活單字，一起用輕鬆的方式學日語。適合 N5–N4 初學者，不怕犯錯，慢慢來就好。</p><div class="hero-actions"><button class="btn primary" data-go="grammar">開始學文法 <span aria-hidden="true">↗</span></button><button class="btn secondary" data-go="quiz">挑戰小測驗</button></div></div>
+          <div class="hero-art" aria-hidden="true"><div class="sun">✳</div><div class="art-bubble top">こんにちは！</div><div class="mascot"><span class="mascot-face">◡</span><i class="blush b1"></i><i class="blush b2"></i></div><div class="art-bubble bottom">一起加油 ♡</div><div class="art-spark">✦</div></div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">YOUR STUDY CORNER</span><h2>今天想學什麼？</h2></div><p>挑選一個喜歡的方式開始吧！</p></div>
+        <div class="feature-grid">
+          <button class="feature feature-peach" data-go="grammar"><span class="feature-icon">文</span><span class="feature-title">文法教室 <span aria-hidden="true">↗</span></span><span class="feature-desc">看懂助詞、て形等必備句型</span></button>
+          <button class="feature feature-yellow" data-go="words"><span class="feature-icon">あ</span><span class="feature-title">單字卡 <span aria-hidden="true">↗</span></span><span class="feature-desc">翻翻卡片，記住生活日語</span></button>
+          <button class="feature feature-mint" data-go="quiz"><span class="feature-icon">✓</span><span class="feature-title">日語小測驗 <span aria-hidden="true">↗</span></span><span class="feature-desc">練習選擇題，立即查看解析</span></button>
+          <button class="feature feature-lavender" data-go="progress"><span class="feature-icon">↗</span><span class="feature-title">學習進度 <span aria-hidden="true">↗</span></span><span class="feature-desc">看看自己的累積與成長</span></button>
+        </div>
+        <div class="home-note"><span>✦</span><p><strong>小提醒：</strong>不用一次全部學會。一天記住一個新句型，也是一種進步。</p></div>
+      </section>
+      <section class="page" id="grammar" aria-labelledby="grammar-title" hidden><div class="page-heading"><span class="eyebrow">GRAMMAR LIBRARY</span><h1 id="grammar-title">文法教室 <span>文法を学ぼう</span></h1><p>每個文法都有簡單解釋和日文例句。</p></div><div class="toolbar"><label for="grammar-level">學習程度</label><select id="grammar-level"><option value="all">全部 N5 + N4</option><option value="N5">N5 入門</option><option value="N4">N4 初級</option></select></div><div class="grammar-grid" id="grammar-list"></div></section>
+      <section class="page" id="words" aria-labelledby="words-title" hidden><div class="page-heading"><span class="eyebrow">VOCABULARY CARDS</span><h1 id="words-title">單字卡 <span>ことばカード</span></h1><p>試著先回想意思，再點擊卡片翻面。</p></div><div class="toolbar"><label for="word-level">單字程度</label><select id="word-level"><option value="all">全部 N5 + N4</option><option value="N5">N5 入門</option><option value="N4">N4 初級</option></select><span id="word-count" class="count"></span></div><div class="flash-wrap"><button id="flash-card" class="flashcard" aria-label="翻開單字卡"><span class="flash-label">點擊卡片翻面 ✦</span><span id="flash-word" class="flash-word">載入中…</span><span id="flash-reading" class="flash-reading"></span><span id="flash-example" class="flash-example"></span></button><div class="flash-actions"><button class="btn secondary" id="flash-prev">← 上一張</button><button class="btn secondary" id="flash-flip">翻面看看</button><button class="btn primary" id="flash-next">下一張 →</button></div></div></section>
+      <section class="page" id="quiz" aria-labelledby="quiz-title" hidden><div class="page-heading"><span class="eyebrow">MINI CHALLENGE</span><h1 id="quiz-title">日語小測驗 <span>クイズに挑戦</span></h1><p>答完每一題，都會告訴你原因。不用怕答錯！</p></div><div class="toolbar"><label for="quiz-level">測驗程度</label><select id="quiz-level"><option value="all">全部 N5 + N4</option><option value="N5">N5 入門</option><option value="N4">N4 初級</option></select><button id="quiz-restart" class="btn secondary small">重新開始</button></div><div id="quiz-container" class="quiz-card" aria-live="polite"></div></section>
+      <section class="page" id="progress" aria-labelledby="progress-title" hidden><div class="page-heading"><span class="eyebrow">SMALL STEPS, BIG GROWTH</span><h1 id="progress-title">學習進度 <span>がんばった記録</span></h1><p>每一次練習都是成長的紀錄。</p></div><div class="stats" id="progress-stats"></div><div class="progress-panel"><h2>最近錯題複習</h2><p class="muted">下次可以優先練習這些文法。</p><div id="mistake-list"></div></div><p class="privacy">🔒 進度只儲存在目前瀏覽器（localStorage），不會上傳到伺服器。清除瀏覽器網站資料後會重置。</p></section>
+    </main>
+    <footer class="footer"><div><strong>Nihongo Buddy</strong><span>學日語，也可以很溫柔。</span></div><p>第 9 次作業展示作品 · 靜態互動網站 · N5–N4</p></footer>
+  </div>
+</body>
+</html>
